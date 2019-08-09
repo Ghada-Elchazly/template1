@@ -1,4 +1,7 @@
-
+body{
+	font-family: varela round,sans-serif;
+	font-size: 16px;
+}
 /*navbar*/
 .navbar{
      background-color:transparent!important;
@@ -28,11 +31,14 @@
 	bottom:50%;
 	right:400px;
 }
+.title button .second{
+	background-color: blue;
+}
 h1{
 	color:white;
 	text-transform:capitalize;
-	font-size:70px;
-	
+	font-size: 54px;
+	font-family: montserrat,sans-serif;
 }
 p{
 	font-size:16px;
@@ -374,6 +380,100 @@ h4{
 	height:300px;
 }
 /*End team*/
+/*start news*/
+.news {
+	background-color:#fafafa;
+}
+.news img{
+	margin-left: -13px;
+}
+.news .col-lg{
+	width:26%;
+	margin-right: 15px;
+	margin-top:300px;
+	background-color:white;
+	margin-bottom: 300px;
+}
+.news h2{
+	text-transform:uppercase;
+	color:black;
+	font-weight:bold;
+	font-size:37px;
+	margin:100px 0;
+}
+.news h4{
+	margin-top:30px;
+	margin-left: -5px;
+	text-transform:uppercase;
+	color:black;
+	font-size:17px;
+	font-weight:bold;
+}
+.news p{
+	color:gray;
+	font-size:15px;
+	text-align:left;
+	margin-top:30px;
+}
+/*end news*/
+/*Start contact*/
+.contact{
+	padding-top: 40px;
+}
+.contact .row .col-lg{
+	margin-top: 300px;
+}
+.contact h2 {
+	text-transform: uppercase;
+	color: black;
+	font-weight: bold;
+	font-size: 37px;
+}
+.contact h4{
+	font-size:20px;
+	color: black;
+	transform: translate(-70px ,100px);
+}
+.contact p{
+	color:gray;
+	transform: translate(-10px ,100px);
+}
+.contact i{
+	color:blue;
+	font-size: 36px;
+	transform: translate(-10px ,-120px);
+}
+.contact form{
+	margin-top:60px;
+}
+.contact input{
+	float: left;
+	margin-left: 70px;
+	margin-bottom: 40px;
+	height: 40px;
+	background-color:#fafafa ;
+	width: 400px;
+}
+.contact textarea{
+	height: 100px;
+	width: 900px;
+	background-color:#fafafa ;
+	margin-left: 100px;
+}
+/*End contact*/
+/*Start footer*/
+.footer{
+	background-color: black;
+	width: 100%;
+}
+.footer .icons{
+	transform: translate(300px ,220px);
+}
+.footer i{
+	font-size: 36px;
+	color: #6195ff;
+}
+/*End footer*/
 /*used colors
 #fafafa;--light blue
 #868f9b----
