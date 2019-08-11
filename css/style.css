@@ -1,22 +1,44 @@
+/*body*/
 body{
 	font-family: varela round,sans-serif;
 	font-size: 16px;
 }
-/*navbar*/
+/*Start home*/
+/*Start navbar*/
 .navbar{
      background-color:transparent!important;
 }
-.navbar ul{
-	
-	margin-right:100px;
+.navbar-brand{
+	color: white!important;
+	text-transform: uppercase;
+	margin-left: 200px;
+	font-size: 30px;
+	font-weight: bold;
 }
 .navbar ul li a{
-	float:right!important;
 	color:white!important;
-	font-size:16px;
+	font-size:14px;
 	font-weight:bold;
-	text-transform:lowercase;
+	text-transform:capitalize;
+	transform: translate(460px,0);
+	margin-right: 13px;
 }
+/*.navbar ul li a :hover{
+	color: gray!important;
+}*/
+.navbar .active .underline{
+	width:40px;
+	border:1.2px solid blue;
+}
+.navbar .underline1{
+	width:40px;
+	border:1.2px solid blue;
+	display: none;
+}
+.navbar .underline1 :hover{
+	display: inline;
+}
+/*End navbar*/
 .bgimage{
 	background-image:url('../images/background.jpg');
 	background-position:center center;
@@ -31,31 +53,35 @@ body{
 	bottom:50%;
 	right:400px;
 }
-.title button .second{
-	background-color: blue;
-}
 h1{
+	text-align: center;
 	color:white;
-	text-transform:capitalize;
+	font-weight: 700;
+	margin-top: -20px;
+	line-height: 1.1;
+	text-transform:uppercase;
 	font-size: 54px;
 	font-family: montserrat,sans-serif;
 }
 p{
 	font-size:16px;
+	text-indent: inherit;
 	color:white;
 	text-align:center;
+	margin: 20px 0 10px!important;
+	font-family: montserrat,sans-serif!important;
 }
-button{
-	margin-right:20px;
-	width:180px;
-	background-color:white!important;
+.title button{
+	width: 170px;
 	height:50px;
-	border-radius:0!important;
-	font-size:18px!important;
+	border-radius: 2px!important;
+	transform: translate(290px,18px)!important;
+	font-size: 16px!important;
+	text-transform: capitalize;
+	transition: .2s opacity;
+	margin-left: -10px;
+	margin-right: 20px;
 	text-align:center;
-}
-button .second{
-	background-color:blue!important;
 }
 .clear{
 	height:100px;
@@ -64,6 +90,7 @@ button .second{
 	height:400px;
 
 }
+/*End Home*/
 /*start about*/
 .about{
 	width:100%;
@@ -74,8 +101,7 @@ button .second{
 	position:absolute;
 	right:40%;
 }
-.underline
-{
+.about .underline {
 	width:50px;
 	border:1.6px solid blue;
 	margin-top:20px;
