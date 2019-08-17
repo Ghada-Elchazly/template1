@@ -9,6 +9,9 @@ h2{
 	margin: 50px 0 120px;
 	text-transform: capitalize;
 }
+.container-fluid{
+	max-width: 100%!important;
+}
 .clear{
 	height:100px;
 }
@@ -40,8 +43,8 @@ h2{
 	background-color: royalblue;
 	transform: translate(440px,0);
 	width: 200px;
-	border-radius: 0px;
-	color: :white;
+	border-radius: 0;
+	color: white;
 }
 .navbar ul li a :hover{
 	color: gray!important;
@@ -55,7 +58,7 @@ h2{
 	border:1.2px solid #6195ff;;
 	display: none;
 }
-.navbar .underline1 : hover{
+.navbar .underline1 :hover{
 	display: inline;
 }
 /*End navbar*/
@@ -112,7 +115,7 @@ p{
 .about .underline {
 	width:40px;
 	border:2px solid #6195ff;;
-	margin-top:20px;
+	margin-top:-100px;
 	position:absolute;
 	right:50%;
 }
@@ -195,7 +198,7 @@ p{
 .portfolio .underline {
 	width:40px;
 	border:2px solid #6195ff;;
-	margin-top:20px;
+	margin-top:-100px;
 	position:absolute;
 	right:50%;
 }
@@ -217,7 +220,7 @@ p{
 .services .underline{
 	width:40px;
 	border:2px solid #6195ff;;
-	margin-top:20px;
+	margin-top:-100px;
 	position:absolute;
 	right:50%;
 }
@@ -357,7 +360,7 @@ h4{
 .price .underline {
 	width:40px;
 	border:2px solid #6195ff;;
-	margin-top:20px;
+	margin-top:-100px;
 	position:absolute;
 	right:50%;
 }
@@ -370,7 +373,7 @@ h4{
 	border-radius:50%;
 	text-align:center;
 	margin:0 auto;
-	margin-bottom:40px;
+	/*margin-bottom:40px;*/
 }
 .price .box1 .totalprice p{
 	color:black;
@@ -397,8 +400,8 @@ h4{
 	top: 40%;
 	right: 14%;
 }
-.price .box1 .totalprice p span
-.price .box2 .totalprice1 p span
+.price .box1 .totalprice p span,
+.price .box2 .totalprice1 p span,
 .price .box3 .totalprice p span{
 	font-size: 15px;
 }
@@ -416,12 +419,11 @@ h4{
 .price .box2 button,
 .price .box3 button{
 	font-size:16px;
-	font-weight:500px;
+	font-weight: 700;
 	text-transform:lowercase;
 	width:180px;
 	height:50px;
 	border-radius:0;
-	border-color:#6195ff;
 	background-color:white;
 	color:#6195ff;
 	border:1.6px solid #6195ff;
@@ -489,7 +491,7 @@ h4{
 .team .underline {
 	width:45px;
 	border:2px solid #6195ff;;
-	margin-top:20px;
+	margin-top:-100px;
 	position:absolute;
 	right:50%;
 }
@@ -535,7 +537,7 @@ h4{
 .news .underline {
 	width:45px;
 	border:2px solid #6195ff;;
-	margin-top:20px;
+	margin-top:-100px;
 	position:absolute;
 	right:50%;
 }
@@ -594,7 +596,7 @@ h4{
 .contact .underline {
 	width:45px;
 	border:2px solid #6195ff;;
-	margin-top:20px;
+	margin-top:-100px;
 	position:absolute;
 	right:50%;
 }
@@ -655,25 +657,28 @@ h4{
 /*End contact*/
 /*Start footer*/
 .footer{
-	background-color: black;
+	background-color: #1c1d21;
 	width: 100%;
-	padding-top: 60px;
 }
 .footer h2{
 	display: block;
 	font-size: 52px;
 	color: #fafafa;
-	margin: 0 auto;
+	margin: 70px auto;
 }
 .footer i{
 	font-size: 36px;
-	background-color: #6195ff;
 	color: #fafafa;
 }
 .footer .icons{
-	float: ;
-	margin-top: 400px;
 	display: block;
+	margin-top: 70px;
+	padding-right: 20px;
+}
+.footer .fb{
+	width: 20px;
+	height: 20px;
+	background-color: royalblue;
 }
 /*End footer*/
 /*used colors
