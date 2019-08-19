@@ -2,14 +2,14 @@
 		<head>
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-compitable" content="IE=edge">
-			<script src="https://kit.fontawesome.com/7c7f92944b.js"></script>
+			<meta name="viewport" content="width=device-width,initial-scale=1">
 			<link rel="stylesheet" href="css/bootstrap.min.css">
 			<link rel="stylesheet" href="css/style.css">
+			<link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
 			<title>welcome</title>
 		</head>
-		<body >
+		<body data-spy='scroll' data-target='nav' data-offset='40' >
 		<!--start home-->
-		<div class="container-fluid">
 			<div class="bgimage"></div>
 			<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-light bg-light ">
 	  			<a class="navbar-brand" href="#">logo</a>
@@ -17,8 +17,8 @@
 					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 	  			</button>
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="main-nav nav navbar-nav navbar-right">
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent navbar-example" >
+				<ul class="main-nav nav navbar-nav navbar-right nav nav-tabs" role="tablist">
 				  <li class="nav-item active">
 					<a class="nav-link" href="#">home<div class="underline"></div> <span class="sr-only">(current)</span></a>
 				  </li>
@@ -56,7 +56,7 @@
 				<h1>we are creative agency</h1>
 				<p>Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula.Mauris<br>
 				 tincidunt sem sed arcu. Nunc posuere. </p>
-				 <button class="btn btn-default">get started!</button><button class="btn btn-primary">learn more</button>
+				 <button class="white-btn">get started!</button><button class="main-btn">learn more</button>
 			 </div>
 			 <!--End home-->
 			 <div class="clear"></div>
@@ -83,13 +83,13 @@
 						<!--::after-->
 					</div>
 					<div class="box3">
-						<i class="fas fa-mobile"></i>
+						<i class="fas fa-mobile-alt"></i>
 						<h3>Fully Responsive</h3>
 						<p>Maecenas tempus tellus eget<br>
 						condimentum rhoncus sem quam semper<br>
 						libero sit amet.</p>
 						<a href="#">read more</a>
-					</div>	
+					</div>
 				</div>
 			</div>
 			<!--End about-->
@@ -101,8 +101,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg">
+							<img src="images/1.jpg" alt="...">
 							<div class="cover">
-								<img src="images/1.jpg" alt="...">
+								<span>category</span>
+								<h4>lorem ipsum dolor</h4>
+								<i class="fas fa-external-link-alt"></i>
+								<i class="fas fa-search"></i>
 							</div>
 						</div>
 						<div class="col-lg">
@@ -181,7 +185,7 @@
 						<div class="slider">
 							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 									<ol class="carousel-indicators">
-										<li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -320,23 +324,7 @@
 										consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
 									</div>
 								</div>
-								<div class="carousel-item">
-									<div class="col-lg">
-										<img src="images/man3.jpg" class="d-block w-100 rounded-img-left" alt="...">
-										<h6> john doe</h6>
-										<span>web designer</span>
-										<p>Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non
-										consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
-									</div>
-									<div class="col-lg">
-										<img src="images/man4.jpg" class="d-block w-100 rounded-img-left" alt="...">
-										<h6> john doe</h6>
-										<span>web designer</span>
-										<p>Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non
-										consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
-									</div>
 								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -386,7 +374,7 @@
 							<div class="info">
 								<i class="fas fa-user-alt"></i><span class="badge">john doe</span>
 								<i class="far fa-clock"></i><span class="badge">18 oct</span>
-								<i class="far fa-comments"></i><span class="badge">47</span>
+								<i class="fas fa-comments"></i><span class="badge">47</span>
 							</div>
 							<h4>Molestie at elementum eu<br> facilisis sed odio</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua<br>
@@ -398,7 +386,7 @@
 							<div class="info">
 								<i class="fas fa-user-alt"></i><span class="badge">john doe</span>
 								<i class="far fa-clock"></i><span class="badge">18 oct</span>
-								<i class="far fa-comments"></i><span class="badge">47</span>
+								<i class="fas fa-comments"></i><span class="badge">47</span>
 							</div>
 							<h4>Molestie at elementum eu<br> facilisis sed odio</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua<br>
@@ -410,7 +398,7 @@
 							<div class="info">
 								<i class="fas fa-user-alt"></i><span class="badge">john doe</span>
 								<i class="far fa-clock"></i><span class="badge">18 oct</span>
-								<i class="far fa-comments"></i><span class="badge">47</span>
+								<i class="fas fa-comments"></i><span class="badge">47</span>
 							</div>
 							<h4>Molestie at elementum eu<br> facilisis sed odio</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua<br>
@@ -446,8 +434,8 @@
 					</div>
 					<form>
 						<div class="form-group">
-							<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
-							<input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Email">
+							<input type="text" class="form1" id="formGroupExampleInput" placeholder="Name">
+							<input type="text" class="form2" id="formGroupExampleInput1" placeholder="Email">
 							<label for="formGroupExampleInput2"></label><input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Subject">
 							<textarea class="form-control" aria-label="With textarea">Message</textarea>
 							<button type="button" class="btn btn-primary">send message</button>
@@ -463,20 +451,29 @@
 					<div class="row">
 						<div class="col-lg">
 							<h2>logo</h2>
-							<div class="clear"></div>
 							<div class="icons">
 								 <a href="#"><i class="fab fa-facebook-f"></i></a>
 								<a href="#"><i class="fab fa-twitter"></i></a>
 								<a href="#"><i class="fab fa-google-plus-g"></i></a>
 								<a href="#"><i class="fab fa-instagram"></i></a>
+								<a href="#"><i class="fab fa-linkedin-in"></i></a>
 								<a href="#"><i class="fab fa-youtube"></i></a>
+							</div>
+							<div class="copyright">
+								<p>copyright <i class="far fa-copyright"></i> 2017.all rights reserved.designed by<a href="#" target="_blank">colorlip</a></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 			<!--End footer-->
+			<script>
+				$(window).scroll(function(){
+				$('nav').toggleclass('scrolled', $(this).scrollTop() > 10);
+				});
+				$('body').scrollspy({ target: 'nav' })
+			</script>
+			<script src="https://kit.fontawesome.com/7c7f92944b.js"></script>
 			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 			<script src="js/bootstrap.min.js"></script>
 		</body>
