@@ -1,8 +1,8 @@
 /*Start general edits*/
 body{
-	font-size: 16px;
 	width: 100%;
 	position: relative;
+	overflow-x: hidden;
 }
 .clear{
 	height:100px;
@@ -30,12 +30,31 @@ body{
     font-family: varela round,sans-serif;
 	letter-spacing: 1.2px;
 	text-transform:capitalize;
-	transform: translate(460px,0);
+	transform: translate(462px,0);
 	margin-right: 9px;
+	border-bottom: none!important;
 }
-navb  a .active :hover{
+.navbar ul li .active{
 	color: #6195ff!important;
-	border: 0 solid transparent;
+	background-color: transparent!important;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom:2px solid #6195ff!important;
+}
+.navbar ul li a:hover{
+	filter: opacity(85%);
+	border: none;
+}
+.navbar .underline{
+	width:40px;
+	border:2px solid #6195ff;
+	position: relative;
+	right: -470px;
+	display: none;
+}
+.navbar ul li a:hover.underline{
+	display: block!important;
 }
 .dropdown-menu{
 	background-color: #6195ff;
@@ -44,14 +63,6 @@ navb  a .active :hover{
 	border-radius: 0;
 	color: white;
 }
-/*.navbar .underline1{
-	width:40px;
-	border:1.2px solid #6195ff;
-	display: none;
-}
-.navbar .underline1 :hover{
-	display: inline;
-}*/
 /*End navbar*/
 .bgimage{
 	background-image:url('../images/background.jpg');
@@ -140,6 +151,13 @@ p {
 	margin-top:-24px;
 	background:white;
 	border:.5px solid #eee;
+	transition: .4s ease-in;
+}
+.about .box1:hover {
+	background-color:#10161a
+}
+.about .box1:hover h3{
+	color: white;
 }
 .about .box2{
 	padding: 20px 0 50px;
@@ -149,6 +167,13 @@ p {
 	float:left;
 	background-color:white;
 	border:1px solid #eee;
+	transition: .4s ease-in-out;
+}
+.about .box2:hover {
+	background-color:#10161a
+}
+.about .box2:hover h3{
+	color: white;
 }
 .about .box3{
 	padding: 20px 0 50px;
@@ -157,6 +182,12 @@ p {
 	margin-top:-24px;
 	background:white;
 	border:1px solid #eee;
+	transition: .4s ease-in-out;
+}.about .box3:hover {
+	 background-color:#10161a
+ }
+.about .box3:hover h3{
+	color: white;
 }
 .about i{
 	font-size:30px;
@@ -236,43 +267,43 @@ p {
 	width: 350px;
 	height : 370px;
 	background-color: transparent;
-	display: block;
+	display: inline-block;
 	position: absolute;
 	right: 15px;
 	top: -10px;
 }
-.portfolio .cover h4,
-.portfolio .cover i{
-	position: relative;
-	top: 300px;
-	left: 20px;
-}
 .portfolio .cover span{
 	position: relative;
-	top: 100px;
+	text-transform: uppercase;
+	font-size: 17px;
+	top: 150px;
 	color: #6195ff;
 }
 .portfolio .cover h4{
 	font-size: 24px;
+	color: white;
+	position: relative;
+	top: 160px;
 	text-transform:capitalize ;
 }
 .portfolio .cover i{
-	color: red;
+	color: white;
 	z-index: 1;
 	position: relative;
-	bottom: 50%;
-	top: 50%;
-	right: 40px;
 }
-.portfolio .cover a{
+.portfolio .cover a {
 	width: 100px!important;
-	height: 100px;
+	height: 100px!important;
 	text-align: center;
-	border-radius: 3px;
 	background-color: #6195ff;
-	color: #fff;
 	position: relative;
-	top: 300px;
+	top: 165px;
+}
+.portfolio img:hover{
+	filter: brightness(.3);
+}
+.portfolio img:hover.cover{
+	display: inline-block;
 }
 /*End portfolio*/
 /*start services*/
@@ -307,6 +338,25 @@ p {
 	margin-bottom:30px;
 	background:white;
 	border:1px solid #eee;
+	transition: .4s ease-in-out;
+}
+.services .box1:hover {
+	background-color:#10161a
+}
+.services .box2:hover {
+	background-color:#10161a
+}
+.services .box3:hover {
+	background-color:#10161a
+}
+.services .box1:hover h3{
+	color: white;
+}
+.services .box2:hover h3{
+	color: white;
+}
+.services .box3:hover h3{
+	color: white;
 }
 .services h3{
 	text-transform: capitalize;
@@ -448,6 +498,24 @@ p {
 	margin-bottom:50px;
 	float:left;
 	border: 1px solid #eee;
+}
+.price .box1:hover{
+	background-color: black;
+}
+.price .box2:hover{
+	background-color: black;
+}
+.price .box3:hover{
+	background-color: black;
+}
+.price .box1 :hover .totalprice{
+	background-color: black;
+}
+.price .box2 :hover .totalprice1{
+	background-color: black;
+}
+.price .box3 :hover .totalprice{
+	background-color: black;
 }
 .price h3{
 	margin-top:45px;
@@ -608,7 +676,7 @@ p {
 }
 .team .underline {
 	width:40px;
-	border:2px solid #6195ff;;
+	border:2px solid #6195ff;
 	position:absolute;
 	right:47%;
 }
@@ -631,6 +699,40 @@ p {
 	padding: 40px 20px;
 	margin-top: -30px;
 }
+.team .member1:hover{
+	background-color: black;
+	filter: opacity(80%);
+}
+.team .member1:hover img{
+	filter: brightness(.2);
+}
+.team .member1:hover h3{
+	color: white;
+	filter: none;
+}
+.team .member1:hover span{
+	color: #6195ff;
+	filter: none;
+}
+/*.team .icons i{
+	font-size: 16px;
+	transform: translate(14px,215px);
+}
+.team .icons a{
+	display:block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 3px;
+	background-color: #6195ff;
+	color: white;
+	margin-right: 10px;
+	transition: .2s opacity;
+}
+.team .icons a:hover{
+	background-color:  #337ab7;
+}*/
+
 .team .member1 img{
 	height:300px;
 	width: 305px;
@@ -721,6 +823,9 @@ p {
 	margin-bottom: 35px;
 	text-transform: capitalize;
 }
+.news .col-lg a:hover{
+	text-decoration: none;
+}
 /*end news*/
 /*Start contact*/
 .contact{
@@ -773,14 +878,20 @@ p {
 	transform: translateY(-90px);
 }
 .contact input[type=text]:focus {
-    border-top: 2px solid #354052;
-    border-right: 2px solid #354052;
-    border-left: 2px solid #354052;
-    border-bottom: 4px solid #354052;
+    border-top: 1px solid #6195ff;
+    border-right: 1px solid #6195ff;
+    border-left: 1px solid #6195ff;
+    border-bottom: 2px solid #6195ff;
 }
 .contact .form1{
 	margin-left: 30px;
 	margin-bottom: 25px;
+}
+.contact .form-control[type=text]:focus {
+	border-top: 1px solid #6195ff;
+	border-right: 1px solid #6195ff;
+	border-left: 1px solid #6195ff;
+	border-bottom: 2px solid #6195ff;
 }
 .contact .form2{
 	margin-left: 10px;
@@ -805,10 +916,10 @@ p {
 	transform: translateY(-90px);
 }
 .contact textarea[type=text]:focus {
-    border-top: 2px solid #354052;
-    border-right: 2px solid #354052;
-    border-left: 2px solid #354052;
-    border-bottom: 4px solid #354052;
+    border-top: 1px solid #6195ff;
+    border-right: 1px solid #6195ff;
+    border-left: 1px solid #6195ff;
+    border-bottom: 2px solid #6195ff;
 }
 .contact button{
 	background-color: #6195ff;
@@ -822,9 +933,10 @@ p {
 	font-size: inherit;
 	line-height: inherit;
 	transform: translateY(-90px);
+	transition: .2s opacity;
 }
-.contact button:hover{
-    background-color: ;
+.contact button:hover {
+	filter: opacity(.3);
 }
 /*End contact*/
 /*Start footer*/
@@ -859,6 +971,10 @@ p {
 	color: white;
 	margin-right: 10px;
 	margin-bottom: 20px;
+	transition: .2s opacity;
+}
+.footer .icons a:hover{
+	background-color:  #337ab7;
 }
 .footer .copyright{
 	color: #868f9b;
@@ -874,6 +990,10 @@ p {
 .footer .copyright a{
 	color: #6195ff;
 	text-decoration: none;
+	transition: .2s opacity;
+}
+.footer .copyright a:hover{
+	color: #337ab7;
 }
 /*End footer*/
 /*used colors
